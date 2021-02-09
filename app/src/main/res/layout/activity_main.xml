@@ -38,7 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="doClick"
-            android:text="使用RecyclerView实现流式布局"
+            android:text="使用RecyclerView实现流式布局(FlowLayoutManager)"
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -49,7 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="doClick"
-            android:text="FlexboxLayout的使用"
+            android:text="FlexboxLayout实现流式布局"
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -60,11 +60,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:onClick="doClick"
-            android:text="FlexboxLayout和RecyclerView结合使用"
+            android:text="FlexboxLayout和RecyclerView结合使用实现流式布局"
             android:textAllCaps="false"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/btn_04" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="doClick"
+            android:text="CustomRecycleView实现流式布局"
+            android:textAllCaps="false"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_05" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.FlowLayoutDemo">
-        <activity android:name=".ui.FlexboxLayoutActivity"></activity>
+        <activity android:name=".ui.CustomRvActivity"></activity>
+        <activity android:name=".ui.FlexboxLayoutActivity" />
         <activity android:name=".ui.RvActivity" />
         <activity android:name=".ui.ZFlowLayoutActivity" />
         <activity android:name=".ui.FlowLayoutActivity" />

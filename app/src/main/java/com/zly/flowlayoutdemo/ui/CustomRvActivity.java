@@ -1,42 +1,42 @@
 package com.zly.flowlayoutdemo.ui;
 
-import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
+
+import android.os.Bundle;
 
 import com.zly.flowlayoutdemo.R;
 import com.zly.flowlayoutdemo.adapter.CommomRvAdapter;
 import com.zly.flowlayoutdemo.adapter.CommomRvViewHolder;
+import com.zly.flowlayoutdemo.widget.CustomRecycleView;
 import com.zly.flowlayoutdemo.widget.FlowLayoutManager;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RvActivity extends AppCompatActivity {
+public class CustomRvActivity extends AppCompatActivity {
 
-    private RecyclerView mRecyclerView;
+    private CustomRecycleView mCrv;
 
     private List<String> mDatas;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rv);
+        setContentView(R.layout.activity_custom_rv);
 
-        mRecyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-
+        mCrv = (CustomRecycleView) findViewById(R.id.crv);
         loadData();
 
         FlowLayoutManager flowLayoutManager = new FlowLayoutManager();
-        mRecyclerView.setLayoutManager(flowLayoutManager);
+        mCrv.setLayoutManager(flowLayoutManager);
 
-        mRecyclerView.setAdapter(new CommomRvAdapter<String>(this, mDatas, R.layout.item_rv) {
+        mCrv.setAdapter(new CommomRvAdapter<String>(this, mDatas, R.layout.item_rv) {
             @Override
             protected void fillData(CommomRvViewHolder holder, int position, String s) {
                 holder.setText(R.id.tv_label, s);
             }
         });
+
     }
 
     private void loadData() {

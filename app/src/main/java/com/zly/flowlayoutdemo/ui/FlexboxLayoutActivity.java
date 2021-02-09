@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class FlexboxLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_flexbox_layout);
 
         mFlexboxLayout = (FlexboxLayout) findViewById(R.id.flexbox_layout);
+
 
         //动态添加
         // dynamicAddView();
@@ -56,4 +58,5 @@ public class FlexboxLayoutActivity extends AppCompatActivity {
             }
         }
     }
+
 }
